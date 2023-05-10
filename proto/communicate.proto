@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package my_package;
+
+message request_str { string mystr = 1; }
+
+message Index { int32 index = 1; }
+
+service clientService { rpc whichIndex(request_str) returns (Index); }
+
+service serverService { rpc getResponse(Index) returns (request_str); }
