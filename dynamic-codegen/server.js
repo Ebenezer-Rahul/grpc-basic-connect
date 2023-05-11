@@ -1,4 +1,4 @@
-let PROTO_PATH ='./proto/communicate.proto';
+let PROTO_PATH ='./../proto/communicate.proto';
 
 const grpc = require("@grpc/grpc-js");
 
