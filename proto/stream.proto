@@ -1,0 +1,15 @@
+syntax =  "proto3";
+
+package mystreamer;
+
+message number {
+  int32 num = 1;
+}
+
+message req {
+  int32 streamNum = 1;
+}
+
+service magicNumber {
+  rpc getStream(req) returns (stream number);
+}
